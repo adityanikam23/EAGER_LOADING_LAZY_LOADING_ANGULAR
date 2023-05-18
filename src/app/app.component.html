@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark text-capitalize">
+  <div class="container">
+    <a href="" class="navbar-brand">
+      <h4>eager-loading-&-lazy-loading</h4>
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="mynavbar" class="collapse navbar-collapse text-capitalize">
+       <ul class="navbar-nav">
+          <li class="nav-item"><a routerLink="/" class="nav-link">home</a></li>
+          <li class="nav-item"><a routerLink="/eager/child1" class="nav-link">eager-child-1</a></li>
+          <li class="nav-item"><a href="/eager/child2" class="nav-link">eager-child-2</a></li>
+          <li class="nav-item"><a routerLink="/lazy/child1" class="nav-link">lazy-child-1</a></li>
+          <li class="nav-item"><a routerLink="/lazy/child2" class="nav-link">lazy-child-2</a></li>
+       </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
